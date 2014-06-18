@@ -28,6 +28,7 @@ To build both this library, the modified version of MongoDB, and run the code th
    $ cd ..
    
 5. Clone the modified version of MongoDB, switch to my branch, and build it:
+   $ export LD_LIBRARY_PATH=../bvutils/lib
    $ git clone https://github.com/mike-schiller/mongo.git
    $ cd mongo
    $ git checkout 2.6.1_bv
