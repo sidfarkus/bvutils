@@ -4,10 +4,12 @@
 
 script_dir="$(dirname -- "$(readlink -f -- "$0")")"
 
+echo $script_dir
+
 if [ ! -d "EWAHBoolArray" ]; then
-  git clone git@git.lab76.org:afrancis/cplusplusewahboolarray.git EWAHBoolArray
+  git clone git@github.com:mike-schiller/EWAHBoolArray.git EWAHBoolArray
   cd EWAHBoolArray
-  git checkout master
+  git checkout java_serialization
   cd $script_dir 
 fi
 
